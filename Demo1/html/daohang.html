@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+    <link rel="stylesheet" href="../css/01.css">
+    <script>
+        window.onload=function () {
+            var   banner = document.querySelectorAll(".banner");
+            var   btns = document.querySelectorAll(".btn");
+            var num= 0;
+            setInterval(function () {
+
+                if(num==2){
+                    num=0
+                }else{
+
+                    for(var i = 0;i<banner.length;i++){
+                        banner[i].style.display="none"
+                        btns[i].style.backgroundColor="#000000"
+                    }
+                    banner[num].style.display="block"
+                    btns[num].style.backgroundColor="#FFA500"
+                    num++
+                }
+            },3000)
+        }
+
+    </script>
+</head>
+<body>
+<header>
+    <img src="../image/left_header.png" alt="" hspace="40">
+    <img src="../image/right_header.jpg" alt="">
+</header>
+      <div class="box">
+            <div class="con">
+                  <div class="left">
+                    <a href="" class="active">首页</a>
+                    <a href="" >国内机票</a>
+                    <a href="">国际机票</a>
+                    <a href="">民航资讯</a>
+                    <a href="">民航问答</a>
+                  </div>
+                  <div class="right">
+                    <a href=""class="login">登录</a>
+                    <a href="">注册</a>
+                    <a href="">用户中心<div class="sanjiao"></div></a>
+
+
+                  </div>
+            </div>
+      </div>
+
+<div class="hot">
+    <span>热门城市</span>
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">广州</a>
+    <a href="">南京</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+</div>
+
+<!--轮播图-->
+<div class="wheel-box">
+    <div class="banner banner1"></div>
+    <div class="banner banner2"></div>
+    <div class="btns">
+        <div class="btn"></div>
+        <div class="btn"></div>
+
+
+    </div>
+</div>
+
+<!--热门航线预定-->
+    <div class="order">
+        <div class="left_title">热门航线预定</div>
+         <div class="right_title">
+             <div class="right_title_a">
+                 <a href="">全国</a>
+                 <a href="">深圳</a>
+                 <a href="">北京</a>
+                 <a href="">上海</a>
+                 <a href="">广州</a>
+                 <a href="">武汉</a>
+                 <a href="">成都</a>
+                 <a href="">海口</a>
+                 <a href="">重庆</a>
+                 <a href="">沈阳</a>
+
+             </div>
+
+         </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    海口-->郑州
+
+                </div>
+                <div class="middle">
+                    12月16日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">150</span>
+                </div>
+            </div>
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    海口-->长沙
+                </div>
+                <div class="middle">
+                    10月15日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">110</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    武汉-->神农架
+                </div>
+                <div class="middle">
+                    05月18日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">117</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    银川-->昆明
+                </div>
+                <div class="middle">
+                    05月18日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">220</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    太原-->昆明
+                </div>
+                <div class="middle">
+                    11月11日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">250</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    南京-->上海浦东
+                </div>
+                <div class="middle">
+                    07月03日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">150</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    西安-->上海浦东
+                </div>
+                <div class="middle">
+                    01月25日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">200</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    合肥-->海口
+                </div>
+                <div class="middle">
+                    05月28日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">279</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    天津-->三亚
+                </div>
+                <div class="middle">
+                    05月22日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">399</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    哈尔滨-->三亚
+                </div>
+                <div class="middle">
+                    05月15日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">540</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!--票价-->
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,226 @@
+
+body{
+    margin: 0;
+    padding: 0;
+
+
+}
+/*头部图片*/
+header{
+    width: 1180px;
+    height:70px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.box{
+    width: 100%;
+    height: 40px;
+    background-color: #3b8de3; /*16进制*/
+    /* position: fixed;*/
+}
+.con{
+    width: 1180px;
+    height: 100%;
+    /* border: 1px solid red;*/
+    margin: auto;
+}
+.left{
+    width: 690px;
+    height: 100%;
+    /* border: 1px solid green;*/
+    float: left;   /*设置浮动*/
+}
+.right{
+    width: 240px;
+    height: 100%;
+    /* border: 1px solid yellow;*/
+    float: right;   /*设置浮动*/
+    position: relative;
+}
+a{
+    float: left;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+.left a{
+    /*a 行内元素 */
+    width: 20%;
+    height: 100%;
+}
+.right a{
+    width: 33.333%;
+    height: 100%;
+
+}
+.active{
+    background: #fff;
+    color: #3b8de3;
+    border-top: 2px solid orange;
+}
+.left a:hover,.right a:hover{
+    background: #fff;
+    color: #3b8de3;
+    border-top: 2px solid orange;
+}
+.login{
+    background: url("../image/img.png") no-repeat -315px -500px;
+}
+.sanjiao {
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-left: 5px solid #3b8de3;
+    border-right: 5px solid #3b8de3;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+.hot{
+    width: 1180px;
+    height: 35px;
+    margin: auto;
+}
+.hot span{
+    color: #000;
+    float: left;
+    display: block;
+    margin-top: 10px;
+}
+.hot a{
+    float: left;
+    text-decoration: none;
+    color: #3b8de3;
+    display: block;
+    margin: auto;
+    margin-left: 20px;
+}
+.hot a:hover{
+    color: orange;
+}
+
+/*轮播*/
+.wheel-box{
+    width: 100%;
+    height: 380px;
+    position: relative;
+   /* border: 1px solid red;*/
+}
+.banner1{
+    width: 100%;
+    height: 100%;
+    background: url("../image/1.png") no-repeat 98% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banner2{
+    width: 100%;
+    height: 100%;
+    background: url("../image/2.png") no-repeat 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.btns{
+    position: absolute;
+    width: 200px;height: 20px;
+    position: absolute;right: 20px;bottom: 0px;
+}
+
+.btn{
+    width: 50px;height: 10px;
+    background: black;
+    float: left;
+    margin-left: 15px;
+
+
+
+}
+.btn.active{
+    background: orange;
+}
+
+
+/*热门航线预定*/
+.order{
+    width: 1190px;
+    height: 36.8px;
+    margin: auto;
+    border-bottom: 2px solid #ccc;
+}
+.order .left_title{
+    width: 177.6px;
+    height: 36.8px;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: #555;
+    float: left;
+    font-size: 28px;
+
+}
+.order .right_title{
+    width:800px;
+    height: 100%;
+    float: right;
+}
+.right_title_a a{
+    width: 10%;
+    height: 36.8px;
+    color: #555;
+    float: left;
+    font-size: 18px;
+    display: block;
+
+}
+.right_title_a a:hover{
+    color: #3b8de3;
+    border-bottom: 2px solid #3b8de3;
+
+}
+/*订票*/
+.picket{
+    float: left;
+    width: 236px;
+    height: 154px;
+   /* border: 1px solid red;*/
+}
+
+.picket .list{
+    width: 220px;
+    height: 136px;
+    display: block;
+    float: left;
+    margin-top: 18px;
+   border: 1px solid #ccc;
+}
+.list .top{
+    width: 220px;
+    height: 45px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.list .middle{
+    width: 220px;
+    height: 21.2px;
+    text-align: center;
+}
+.list .bottom{
+    width: 220px;
+    height: 68px;
+    text-align: center;
+}
+.list .span{
+    color: red;
+}
+.list .span2{
+    color: red;
+    font-size: 28px;
+}
+
+
